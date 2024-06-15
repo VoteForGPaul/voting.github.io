@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.category {
+    margin-top: 20px;
+}
+
+.candidates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.candidate {
+    margin: 10px;
+    text-align: center;
+}
+
+.candidate img {
+    max-width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.candidate input {
+    display: none;
+}
+
+.candidate label {
+    cursor: pointer;
+}
