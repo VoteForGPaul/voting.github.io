@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mocusma Club Voting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Mocusma Club Voting</h1>
+    <form id="votingForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="regNumber">Registration Number:</label>
+        <input type="text" id="regNumber" pattern="mocu\/bbict\/\d{3}\/\d{2}" required>
+        
+        <h2>Categories</h2>
+        
+        <div class="category">
+            <h3>Chairperson</h3>
+            <div class="candidates" id="chairpersonCandidates"></div>
+        </div>
+
+        <div class="category">
+            <h3>Vice Chairperson</h3>
+            <div class="candidates" id="viceChairpersonCandidates"></div>
+        </div>
+
+        <div class="category">
+            <h3>Cashier</h3>
+            <div class="candidates" id="cashierCandidates"></div>
+        </div>
+
+        <div class="category">
+            <h3>Katibu</h3>
+            <div class="candidates" id="katibuCandidates"></div>
+        </div>
+
+        <div class="category">
+            <h3>Secretary</h3>
+            <div class="candidates" id="secretaryCandidates"></div>
+        </div>
+
+        <button type="submit">Vote</button>
+    </form>
+    
+    <p id="message"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
